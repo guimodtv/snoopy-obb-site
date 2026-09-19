@@ -21,12 +21,12 @@
   --glass:rgba(255,255,255,.035);
   --glass-2:rgba(255,255,255,.06);
   --glass-3:rgba(255,255,255,.1);
-  --iris:#7c6bff;
-  --iris-2:#a78bfa;
-  --cyan:#22d3ee;
-  --pink:#f472b6;
-  --amber:#fbbf24;
-  --green:#34d399;
+  --iris:#e50914;
+  --iris-2:#ff3b30;
+  --cyan:#ff5a36;
+  --pink:#b00020;
+  --amber:#ffb000;
+  --green:#e5e5e5;
   --red:#f87171;
 }
 
@@ -59,10 +59,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   content:'';position:absolute;
   inset:-20%;
   background:
-    radial-gradient(circle at 20% 30%,rgba(124,107,255,.4),transparent 35%),
-    radial-gradient(circle at 75% 20%,rgba(34,211,238,.32),transparent 35%),
-    radial-gradient(circle at 30% 80%,rgba(244,114,182,.3),transparent 40%),
-    radial-gradient(circle at 85% 75%,rgba(167,139,250,.26),transparent 40%);
+    radial-gradient(circle at 20% 30%,rgba(229,9,20,.4),transparent 35%),
+    radial-gradient(circle at 75% 20%,rgba(255,90,54,.32),transparent 35%),
+    radial-gradient(circle at 30% 80%,rgba(176,0,32,.3),transparent 40%),
+    radial-gradient(circle at 85% 75%,rgba(229,9,20,.26),transparent 40%);
   filter:blur(90px) saturate(1.5);
   animation:meshDrift 22s ease-in-out infinite;
   opacity:.75;
@@ -71,8 +71,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   content:'';position:absolute;
   inset:-20%;
   background:
-    radial-gradient(circle at 60% 40%,rgba(251,191,36,.16),transparent 35%),
-    radial-gradient(circle at 10% 90%,rgba(52,211,153,.14),transparent 40%);
+    radial-gradient(circle at 60% 40%,rgba(255,176,0,.16),transparent 35%),
+    radial-gradient(circle at 10% 90%,rgba(229,229,229,.10),transparent 40%);
   filter:blur(100px) saturate(1.4);
   animation:meshDrift2 30s ease-in-out infinite;
   opacity:.6;
@@ -101,7 +101,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   background:linear-gradient(
     90deg,
     transparent 0%,
-    rgba(124,107,255,.15) 20%,
+    rgba(229,9,20,.15) 20%,
     rgba(34,211,238,.18) 40%,
     rgba(244,114,182,.15) 60%,
     rgba(167,139,250,.15) 80%,
@@ -157,12 +157,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .nav-left{display:flex;align-items:center;gap:12px}
 .logo-mark{
   width:32px;height:32px;border-radius:9px;
-  background:linear-gradient(135deg,#7c6bff 0%,#22d3ee 100%);
+  background:linear-gradient(135deg,#e50914 0%,#5b0008 100%);
   display:grid;place-items:center;
   color:#fff;font-weight:900;font-size:15px;
   letter-spacing:-.04em;
   box-shadow:
-    0 8px 24px rgba(124,107,255,.4),
+    0 8px 24px rgba(229,9,20,.4),
     inset 0 1px 0 rgba(255,255,255,.35);
   position:relative;flex-shrink:0;
   animation:logoFloat 4s ease-in-out infinite;
@@ -173,7 +173,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 }
 .logo-mark::before{
   content:'';position:absolute;inset:-4px;border-radius:13px;
-  background:linear-gradient(135deg,#7c6bff,#22d3ee);
+  background:linear-gradient(135deg,#e50914,#5b0008);
   filter:blur(10px);opacity:.5;z-index:-1;
   animation:logoPulse 3.5s ease-in-out infinite;
 }
@@ -186,7 +186,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 }
 .brand em{
   font-style:normal;
-  background:linear-gradient(120deg,#a78bfa 0%,#22d3ee 100%);
+  background:linear-gradient(120deg,#ff3b30 0%,#e50914 100%);
   background-size:200% 100%;
   -webkit-background-clip:text;background-clip:text;
   color:transparent;
@@ -232,7 +232,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   transform:rotate(15deg) scale(1.05);
 }
 .icon-btn.on{
-  color:var(--iris-2);border-color:rgba(124,107,255,.4);
+  color:var(--iris-2);border-color:rgba(229,9,20,.4);
   background:rgba(124,107,255,.1);
 }
 .icon-btn svg{width:15px;height:15px}
@@ -305,7 +305,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   font-family:'Instrument Serif','Inter',serif;
   font-style:italic;font-weight:400;
   letter-spacing:-.02em;
-  background:linear-gradient(120deg,#a78bfa 0%,#22d3ee 60%,#f472b6 100%);
+  background:linear-gradient(120deg,#ff3b30 0%,#e50914 60%,#7f0010 100%);
   background-size:200% 100%;
   -webkit-background-clip:text;background-clip:text;
   color:transparent;
@@ -400,7 +400,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   position:absolute;
   width:400px;height:400px;
   border-radius:50%;
-  background:radial-gradient(circle,rgba(124,107,255,.15),transparent 60%);
+  background:radial-gradient(circle,rgba(229,9,20,.15),transparent 60%);
   pointer-events:none;
   transform:translate(-50%,-50%);
   transition:opacity .3s;
@@ -411,11 +411,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .card:hover .card-glow{opacity:1}
 
 .card.gold{
-  border-color:rgba(251,191,36,.25);
+  border-color:rgba(255,176,0,.25);
   box-shadow:
     0 40px 100px rgba(0,0,0,.5),
-    0 0 0 1px rgba(251,191,36,.08) inset,
-    0 0 80px rgba(251,191,36,.15),
+    0 0 0 1px rgba(255,176,0,.08) inset,
+    0 0 80px rgba(255,176,0,.15),
     0 1px 0 rgba(255,255,255,.1) inset;
 }
 
@@ -616,8 +616,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   transition:all .2s;
 }
 .cta-hint:hover kbd{
-  background:rgba(124,107,255,.15);
-  border-color:rgba(124,107,255,.4);
+  background:rgba(229,9,20,.15);
+  border-color:rgba(229,9,20,.4);
   color:var(--iris-2);
   transform:translateY(-1px);
 }
@@ -677,7 +677,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   to{opacity:1;transform:scale(1)}
 }
 .key-display.gold{
-  background:linear-gradient(160deg,rgba(251,191,36,.1),rgba(251,191,36,.02));
+  background:linear-gradient(160deg,rgba(255,176,0,.1),rgba(251,191,36,.02));
   border-color:rgba(251,191,36,.35);
 }
 .key-display::before{
@@ -703,7 +703,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   animation:keyGlow 3s ease-in-out infinite;
 }
 .key-display.gold::after{
-  background:radial-gradient(circle,rgba(251,191,36,.25),transparent 60%);
+  background:radial-gradient(circle,rgba(255,176,0,.25),transparent 60%);
 }
 @keyframes keyGlow{
   0%,100%{opacity:.4;transform:scale(1)}
@@ -758,7 +758,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .bonus-pill{
   display:inline-flex;align-items:center;gap:7px;
   margin-top:14px;padding:8px 16px;
-  background:linear-gradient(135deg,rgba(251,191,36,.16),rgba(244,114,182,.1));
+  background:linear-gradient(135deg,rgba(255,176,0,.16),rgba(244,114,182,.1));
   border:1px solid rgba(251,191,36,.35);
   border-radius:100px;
   font-size:11.5px;font-weight:700;
@@ -845,7 +845,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   box-shadow:0 10px 24px rgba(0,0,0,.3);
 }
 .act.copied{
-  background:rgba(52,211,153,.14);
+  background:rgba(229,229,229,.10);
   border-color:rgba(52,211,153,.4);
   color:var(--green);
   animation:copiedPop .5s cubic-bezier(.34,1.8,.64,1);
@@ -889,7 +889,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   to{opacity:1;transform:scale(1) rotate(0)}
 }
 .cd-ring svg{width:100%;height:100%;transform:rotate(-90deg);display:block}
-.cd-track{fill:none;stroke:rgba(251,191,36,.1);stroke-width:3}
+.cd-track{fill:none;stroke:rgba(255,176,0,.1);stroke-width:3}
 .cd-fill{
   fill:none;stroke:url(#cdGrad);stroke-width:3;
   stroke-linecap:round;
@@ -1054,7 +1054,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   display:grid;place-items:center;flex-shrink:0;
 }
 .toast-icon svg{width:15px;height:15px}
-.toast.success .toast-icon{background:rgba(52,211,153,.14);color:var(--green)}
+.toast.success .toast-icon{background:rgba(229,229,229,.10);color:var(--green)}
 .toast.error .toast-icon{background:rgba(248,113,113,.14);color:var(--red)}
 .toast.info .toast-icon{background:rgba(124,107,255,.14);color:var(--iris-2)}
 .toast.warn .toast-icon{background:rgba(251,191,36,.14);color:var(--amber)}
@@ -1107,6 +1107,15 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
     transition-duration:.01ms !important;
   }
 }
+
+/* SNOOPY OBB identity */
+.hero-logo{
+  width:132px;height:132px;object-fit:cover;border-radius:50%;
+  border:3px solid #e50914;
+  box-shadow:0 0 0 6px rgba(229,9,20,.12),0 14px 50px rgba(229,9,20,.35);
+  animation:logoReveal 1s .05s cubic-bezier(.34,1.26,.64,1) both;
+}
+@keyframes logoReveal{from{opacity:0;transform:translateY(-18px) scale(.82)}to{opacity:1;transform:translateY(0) scale(1)}}
 </style>
 </head>
 <body>
@@ -1121,7 +1130,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 <div class="nav">
   <div class="nav-left">
     <div class="logo-mark">F</div>
-    <div class="brand">SNOOPY<em>MODS</em></div>
+    <div class="brand">SNOOPY<em>OBB</em></div>
   </div>
   <div class="nav-right">
     <div class="status-pill" id="statusPill">
@@ -1140,6 +1149,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 
     <!-- HERO -->
     <div class="hero">
+      <img class="hero-logo" src="logo.jpg" alt="Logo SNOOPY OBB">
       <div class="eyebrow">
         <span class="eyebrow-dot"></span>
         <span id="eyebrowText">Geração instantânea de chave</span>
